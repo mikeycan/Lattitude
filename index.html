@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lattitude Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+  
+  <ul>
+  <li id=1><strong>Lattitude</strong></li>
+  <li><a href="Comparisons.html">Comparisons</a></li>
+  <li><a href="data.html">Data</a></li> 
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Plots</a>
+    <div class="dropdown-content">
+      <a href="Visualization1.html">Max Temperature</a>
+      <a href="Visualization2.html">Humidity</a>
+      <a href="Visualization3.html">Cloudiness</a>
+      <a href="Visualization4.html">Windspeeds</a>
+    </div>
+  </li>
+</ul>
+<main class="container">
+  <section style="background-color:white;" class="col-sm-12 col-md-6">
+    <div><font size="10"><font color="#0AB8A0"><strong>Summary: Lattitude vs. X</strong></font></font></div>
+    <p></p>
+    <br>
+    <p></p>     
+    <section id="figure">
+      <img id="bio-image" src="TempByLat.png">
+    </section>
+    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis we first pulled data from OpenWetherMap API to assemble a data set of over 500 cities.</p>
+    <p>After assembling the dataset, we used matplotlib to plot various aspects of weather vs. lattitude. Factors e looked at included temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+  </section>
+  
+  </section>
+</main>
+</body>
+</html>
